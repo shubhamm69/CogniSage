@@ -1,0 +1,165 @@
+.body {
+    font-family: Comic Sans MS;
+    font-size: xx-larger;
+     background-position: center;
+     background-repeat: no-repeat;
+     font-style: oblique;
+ } 
+ 
+ .h1{
+     color: #ffffff;
+ }
+ 
+ body,
+ html {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     overflow-x: hidden;
+ }
+ 
+ .curvy-background {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(to right, #2C493F, #3E6F63, #75a084, #A4CE95);
+     overflow: hidden;
+     z-index: -1;
+ }
+ 
+ .curvy-background svg {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     height: auto;
+ }
+ 
+ .content {
+     position: relative;
+     z-index: 1;
+     text-align: center;
+     color: white;
+     padding: 20px;
+    
+ }
+ 
+ .fa-volume-up {
+     font-size: 24px; 
+ }
+ 
+ 
+ body.modal-open {
+     filter: blur(5px);
+     pointer-events: none;
+ }
+ 
+ .heading{
+     font-family: Comic Sans MS;
+     font-size: larger;
+     font-weight: bold;
+     text-align: center;
+     margin-top: 5%;
+ }
+ 
+ .icon-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+ 
+ .icon-row {
+     display: flex;
+     width: 100em;
+     height: 50em;
+     align-items: center;
+     margin-bottom: 1em;
+ }
+ 
+ .icon-column {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100em;
+     height: 35em;
+     padding: 10%;
+     margin-bottom: 1em;
+ }
+ 
+ .icon{
+     transition: 0.3s ease;
+     margin-bottom: 20px;
+ }
+ .icon:hover{
+     transform: scale(1.5);
+ }
+ 
+ 
+ .button-container {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+ }
+ 
+ 
+ .button {
+     flex-basis: calc(50% - 5px);
+     padding: 5px 10px 5px 10px;
+     margin-bottom: 1em;
+     margin-top: 10px;
+     margin-right: 5%;
+     height: 40px;
+     width: 60%;
+     font-size: 25px;
+     border: none;
+     border-radius: 20px;
+     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+     color: #ffffff;
+     cursor: pointer;
+     transition: all 0.3s ease;    
+ }
+ 
+ 
+ .button:hover {
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     background-image: linear-gradient(to right, #007bff 0%, #0056b3 100%);
+ }
+ 
+ 
+ .card-content {
+     padding: 20px;
+ }
+ 
+ .card-close-button {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     border-radius: 20%;
+ }
+ 
+ 
+ .card {
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 25%;
+     height: 50%;
+     background-color: #A4CE95;
+     border: 1px solid black;
+     display: none;
+     z-index: 1000;
+     border-radius: 10px;
+     font-family: Comic Sans MS;
+     font-size: 1.5em;
+ }
+ 
+ 
+ #container.blur {
+     filter: blur(2px);
+     -webkit-filter: blur(2px);
+     -moz-filter: blur(2px);
+     -o-filter: blur(2px);
+     -ms-filter: blur(2px);
+ }
